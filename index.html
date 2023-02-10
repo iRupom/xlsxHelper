@@ -1,0 +1,39 @@
+<!-- In this file I have created a simple file input form to input file from folder -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File Uploading</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+  </head>
+  <body>
+      <div class="d-flex p-2 justify-content-center align-items-start" >
+        <div>
+            <h3 class="m-0">Upload Student List File</h3> <br>
+            <div>
+              <form id="fileUploadForm" enctype="multipart/form-data">
+                <label for="fileUpload" class="uploadBox">
+                  <input
+                    id="fileUpload"
+                    type="file"
+                    accept="xlsx*"
+                  />
+                </label>
+              </form>
+              <br>
+              <button onclick="saveFile()">Upload File</button>
+            </div>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js""></script>
+    <script src="./fileHandler.js">
+    </script>
+  </body>
+</html>
